@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage
+    x:Class="BranchClone.Views.PopUps.SelectLanguageOptionsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:popup="http://rotorgames.com"
+    CloseWhenBackgroundIsClicked="True">
+
+    <popup:PopupPage.Animation>
+        <popup:ScaleAnimation
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"
+            PositionIn="Bottom"
+            PositionOut="Bottom"
+            ScaleIn="1.2"
+            ScaleOut="0.8" />
+    </popup:PopupPage.Animation>
+
+    <StackLayout>
+
+        <Frame
+            Margin="0"
+            Padding="0"
+            CornerRadius="0"
+            HeightRequest="320"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="EndAndExpand">
+
+            <StackLayout
+                Padding="0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <StackLayout
+                    Padding="15"
+                    BackgroundColor="{StaticResource SecondaryLight}"
+                    Orientation="Horizontal"
+                    VerticalOptions="Start">
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelBold}"
+                        Text="Choose your language"
+                        TextColor="Black"
+                        VerticalOptions="CenterAndExpand" />
+
+                    <Image
+                        Aspect="AspectFit"
+                        HeightRequest="20"
+                        HorizontalOptions="EndAndExpand"
+                        Source="cancel"
+                        VerticalOptions="CenterAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ClosePopupPageCommand}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+
+                <StackLayout
+                    Padding="15"
+                    BackgroundColor="{StaticResource SecondaryLight2}"
+                    Orientation="Horizontal"
+                    VerticalOptions="Start">
+
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ClosePopupPageCommand}" />
+                    </StackLayout.GestureRecognizers>
+
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelBold}"
+                        Text="English"
+                        TextColor="Black"
+                        VerticalOptions="CenterAndExpand" />
+
+                    <Image
+                        Aspect="AspectFit"
+                        HeightRequest="20"
+                        HorizontalOptions="EndAndExpand"
+                        Source="tick"
+                        VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+
+                <StackLayout
+                    Padding="15"
+                    Orientation="Horizontal"
+                    VerticalOptions="Start">
+
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ClosePopupPageCommand}" />
+                    </StackLayout.GestureRecognizers>
+
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelBold}"
+                        Text="Kiswahili"
+                        TextColor="Black"
+                        VerticalOptions="CenterAndExpand" />
+
+                </StackLayout>
+
+                <StackLayout
+                    Padding="15"
+                    Orientation="Horizontal"
+                    VerticalOptions="Start">
+
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ClosePopupPageCommand}" />
+                    </StackLayout.GestureRecognizers>
+
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelBold}"
+                        Text="German"
+                        TextColor="Black"
+                        VerticalOptions="CenterAndExpand" />
+
+                </StackLayout>
+
+
+
+                <StackLayout
+                    Padding="15"
+                    Orientation="Horizontal"
+                    VerticalOptions="Start">
+
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ClosePopupPageCommand}" />
+                    </StackLayout.GestureRecognizers>
+
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelBold}"
+                        Text="French"
+                        TextColor="Black"
+                        VerticalOptions="CenterAndExpand" />
+
+                </StackLayout>
+
+
+            </StackLayout>
+
+
+        </Frame>
+    </StackLayout>
+
+
+</popup:PopupPage>

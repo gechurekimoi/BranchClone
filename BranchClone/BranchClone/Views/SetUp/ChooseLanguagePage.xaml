@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BranchClone.Views.SetUp.ChooseLanguagePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{StaticResource Primary}"
+    Style="{StaticResource ContentPageWithoutNavBar}">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                <StackLayout
+                    AbsoluteLayout.LayoutBounds="0.5,0.2"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Orientation="Horizontal">
+
+                    <Image
+                        Aspect="AspectFit"
+                        HeightRequest="50"
+                        HorizontalOptions="Start"
+                        Source="branchlogo.jpg"
+                        VerticalOptions="CenterAndExpand" />
+                    <Label
+                        FontSize="29"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelBold}"
+                        Text="branch"
+                        TextColor="{StaticResource White-Light}"
+                        VerticalOptions="CenterAndExpand" />
+
+
+                </StackLayout>
+
+
+                <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.38" AbsoluteLayout.LayoutFlags="PositionProportional">
+
+
+                    <Label
+                        FontSize="27"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelBold}"
+                        Text="Welcome to Branch"
+                        TextColor="{StaticResource White-Light}"
+                        VerticalOptions="CenterAndExpand" />
+
+                    <Label
+                        FontSize="16"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelBold}"
+                        Text="Choose your preferred language."
+                        TextColor="{StaticResource White-Light}"
+                        VerticalOptions="CenterAndExpand" />
+
+
+                </StackLayout>
+
+
+                <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.59,0.9,0.12" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional">
+                    <Frame
+                        Padding="0"
+                        BackgroundColor="{StaticResource White-Light}"
+                        CornerRadius="10"
+                        VerticalOptions="FillAndExpand">
+
+                        <Grid
+                            Margin="0"
+                            Padding="0"
+                            ColumnDefinitions="0.9*,0.1*">
+
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ShowLanguagePopupPageCommand}" />
+                            </Grid.GestureRecognizers>
+
+                            <StackLayout Grid.Column="0" Padding="10">
+                                <Label
+                                    Style="{StaticResource LabelBold}"
+                                    Text="Select Your Language"
+                                    TextColor="{StaticResource Secondary}" />
+
+                                <Label
+                                    FontSize="16"
+                                    Style="{StaticResource LabelMedium}"
+                                    Text="English"
+                                    TextColor="{StaticResource Primary}" />
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1" BackgroundColor="{StaticResource Secondary}">
+                                <Image
+                                    Aspect="AspectFit"
+                                    HeightRequest="15"
+                                    HorizontalOptions="CenterAndExpand"
+                                    Source="downarrow"
+                                    VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+
+                        </Grid>
+
+                    </Frame>
+
+                </StackLayout>
+
+
+                <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.95,0.9,0.1" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional">
+
+                    <Button
+                        Clicked="Button_Clicked"
+                        Style="{StaticResource SecondaryButton}"
+                        Text="Continue" />
+
+                </StackLayout>
+
+            </AbsoluteLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

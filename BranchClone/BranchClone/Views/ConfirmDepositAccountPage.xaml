@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BranchClone.Views.ConfirmDepositAccountPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+    xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+    xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+    BackgroundColor="{StaticResource ContentPageBackground}"
+    Style="{StaticResource ContentPageWithoutNavBar}">
+
+    <ContentPage.Resources>
+        <Style TargetType="inputLayout:TextInputHintLabel">
+            <Setter Property="FontFamily" Value="CircularMedium" />
+            <Setter Property="FontSize" Value="13" />
+        </Style>
+
+        <Style TargetType="combobox:SfComboBox">
+            <Setter Property="FontFamily" Value="CircularMedium" />
+        </Style>
+
+        <Style TargetType="inputLayout:SfTextInputLayout">
+            <Setter Property="OutlineCornerRadius" Value="7" />
+
+        </Style>
+
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                Padding="20"
+                HorizontalOptions="FillAndExpand"
+                Orientation="Horizontal"
+                VerticalOptions="Start">
+
+                <Image
+                    HeightRequest="20"
+                    HorizontalOptions="Start"
+                    Source="backarrow"
+                    VerticalOptions="CenterAndExpand" />
+
+                <Label
+                    Margin="30,0"
+                    FontSize="20"
+                    HorizontalOptions="StartAndExpand"
+                    Style="{StaticResource LabelMedium}"
+                    Text="Confirm Deposit Account"
+                    TextColor="{StaticResource LabelDarkColor}" />
+            </StackLayout>
+
+            <StackLayout
+                Padding="20"
+                Spacing="20"
+                VerticalOptions="FillAndExpand">
+                <Label
+                    FontSize="15"
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource LabelRegular}"
+                    Text="Tell us where you would like to receive your loan."
+                    TextColor="{StaticResource LabelDarkColor}"
+                    VerticalOptions="Start"
+                    WidthRequest="200" />
+
+                <StackLayout VerticalOptions="StartAndExpand">
+
+                    <inputLayout:SfTextInputLayout
+                        ContainerType="Outlined"
+                        Hint="Which Account"
+                        HintLabelStyle="{StaticResource LabelMedium}"
+                        IsHintAlwaysFloated="True">
+
+                        <combobox:SfComboBox
+                            x:Name="comboBox"
+                            Margin="10"
+                            BackgroundColor="Transparent"
+                            HeightRequest="50"
+                            SelectedIndex="0">
+
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+                                    <x:String>M-Pesa +254702740041</x:String>
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+                    </inputLayout:SfTextInputLayout>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="EndAndExpand">
+
+                    <Label FontSize="15" Style="{StaticResource LabelRegular}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="By tapping Apply you acknowledge that this loan subject to Branch's " />
+                                    <Span Text="Terms of Use." TextDecorations="Underline" />
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+
+                    </Label>
+
+                    <Button
+                        Clicked="Button_Clicked"
+                        Style="{StaticResource SecondaryButton}"
+                        Text="Apply" />
+
+                </StackLayout>
+            </StackLayout>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

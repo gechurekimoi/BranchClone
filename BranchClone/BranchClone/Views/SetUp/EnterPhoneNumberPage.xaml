@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BranchClone.Views.SetUp.EnterPhoneNumberPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:customRenders="clr-namespace:BranchClone.CustomRenders"
+    BackgroundColor="{StaticResource Primary}"
+    Style="{StaticResource ContentPageWithoutNavBar}">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <AbsoluteLayout
+                Padding="20,0,20,5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+
+                <StackLayout
+                    Padding="0"
+                    AbsoluteLayout.LayoutBounds="0,0,0.9,0.09"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional"
+                    Orientation="Horizontal">
+
+                    <Image
+                        Margin="0,5,0,0"
+                        HeightRequest="20"
+                        HorizontalOptions="Start"
+                        Source="leftarrow"
+                        VerticalOptions="CenterAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GoBackCommand}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelSemiBold}"
+                        Text="Enter Your Phone Number"
+                        TextColor="{StaticResource White-Light}"
+                        VerticalOptions="CenterAndExpand" />
+
+                </StackLayout>
+
+
+                <StackLayout
+                    AbsoluteLayout.LayoutBounds="0.5,0.15"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    HorizontalOptions="CenterAndExpand">
+
+
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelRegular}"
+                        Text="We'll send an SMS with a code to verify your phone number"
+                        TextColor="{StaticResource White-Light}"
+                        WidthRequest="270" />
+
+                </StackLayout>
+
+
+                <StackLayout
+                    AbsoluteLayout.LayoutBounds="0.5,0.3,1,0.14"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional"
+                    HorizontalOptions="FillAndExpand">
+
+
+                    <Label
+                        FontSize="15"
+                        HorizontalOptions="StartAndExpand"
+                        HorizontalTextAlignment="Start"
+                        Style="{StaticResource LabelBold}"
+                        Text="Phone Number"
+                        TextColor="{StaticResource Secondary}" />
+
+                    <Frame
+                        Padding="10"
+                        BorderColor="{StaticResource Secondary}"
+                        CornerRadius="10"
+                        VerticalOptions="FillAndExpand">
+
+                        <StackLayout Orientation="Horizontal" Spacing="0">
+                            <Label
+                                FontSize="17"
+                                HorizontalOptions="Start"
+                                Style="{StaticResource LabelSemiBold}"
+                                Text="+254"
+                                TextColor="Gray"
+                                VerticalOptions="CenterAndExpand" />
+
+                            <customRenders:EntryWithNoBottomBoder
+                                ClearButtonVisibility="WhileEditing"
+                                FontFamily="CircularBold"
+                                FontSize="17"
+                                HorizontalOptions="FillAndExpand"
+                                Text="702740041"
+                                TextColor="Black"
+                                VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+
+
+
+                <StackLayout
+                    Padding="0"
+                    AbsoluteLayout.LayoutBounds="0.5,0.9,1,0.1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional"
+                    HorizontalOptions="FillAndExpand">
+
+                    <Button
+                        Clicked="Button_Clicked"
+                        Style="{StaticResource SecondaryButton}"
+                        Text="Continue" />
+
+                </StackLayout>
+
+
+
+
+            </AbsoluteLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

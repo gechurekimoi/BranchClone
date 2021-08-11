@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BranchClone.Views.SetUp.SelectCountryPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{StaticResource Primary}"
+    Style="{StaticResource ContentPageWithoutNavBar}">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <AbsoluteLayout
+                Padding="20,0,20,5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+
+                <StackLayout
+                    Padding="0"
+                    AbsoluteLayout.LayoutBounds="0,0,0.9,0.09"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional"
+                    Orientation="Horizontal">
+
+                    <Image
+                        Margin="0,5,0,0"
+                        HeightRequest="20"
+                        HorizontalOptions="Start"
+                        Source="leftarrow"
+                        VerticalOptions="CenterAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GoBackCommand}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource LabelSemiBold}"
+                        Text="Choose Your Country"
+                        TextColor="{StaticResource White-Light}"
+                        VerticalOptions="CenterAndExpand" />
+
+                </StackLayout>
+
+
+                <StackLayout
+                    AbsoluteLayout.LayoutBounds="0.5,0.2"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    HorizontalOptions="CenterAndExpand">
+                    <Label
+                        FontSize="22"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelSemiBold}"
+                        Text="Welcome back!"
+                        TextColor="{StaticResource White-Light}"
+                        WidthRequest="200" />
+
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelRegular}"
+                        Text="Please select your country below"
+                        TextColor="{StaticResource White-Light}"
+                        WidthRequest="270" />
+
+                </StackLayout>
+
+
+                <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.4,0.9,0.12" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional">
+                    <Frame
+                        Padding="0"
+                        BackgroundColor="{StaticResource White-Light}"
+                        CornerRadius="10"
+                        VerticalOptions="FillAndExpand">
+
+                        <Grid
+                            Margin="0"
+                            Padding="0"
+                            ColumnDefinitions="0.9*,0.1*">
+
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ShowSelectCountryPageCommand}" />
+                            </Grid.GestureRecognizers>
+
+                            <StackLayout Grid.Column="0" Padding="10">
+                                <Label
+                                    Style="{StaticResource LabelBold}"
+                                    Text="Country"
+                                    TextColor="{StaticResource Secondary}" />
+
+                                <Label
+                                    FontSize="16"
+                                    Style="{StaticResource LabelMedium}"
+                                    Text="Kenya"
+                                    TextColor="{StaticResource Primary}" />
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1" BackgroundColor="{StaticResource Secondary}">
+                                <Image
+                                    Aspect="AspectFit"
+                                    HeightRequest="15"
+                                    HorizontalOptions="CenterAndExpand"
+                                    Source="downarrow"
+                                    VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+
+                        </Grid>
+
+                    </Frame>
+
+                </StackLayout>
+
+
+
+                <StackLayout
+                    Padding="15"
+                    AbsoluteLayout.LayoutBounds="0.5,0.75,1,0.1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional"
+                    HorizontalOptions="FillAndExpand">
+
+                    <Button
+                        Clicked="Button_Clicked"
+                        Style="{StaticResource SecondaryButton}"
+                        Text="Sign In with Phone Number" />
+
+                </StackLayout>
+
+                <StackLayout
+                    Padding="15"
+                    AbsoluteLayout.LayoutBounds="0.5,0.9,1,0.1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional"
+                    HorizontalOptions="FillAndExpand">
+
+                    <Button Style="{StaticResource SecondaryButton}" Text="Sign In with Facebook" />
+
+                </StackLayout>
+
+            </AbsoluteLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

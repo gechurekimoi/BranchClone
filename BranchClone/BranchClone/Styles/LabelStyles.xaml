@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="BranchClone.Styles.LabelStyles"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:styles="clr-namespace:BranchClone.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <styles:ColorStyles />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="LabelBase" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource LabelDefaultColor}" />
+    </Style>
+
+
+    <Style
+        x:Key="LabelRegular"
+        BasedOn="{StaticResource LabelBase}"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="CircularRegular" />
+    </Style>
+
+
+    <Style
+        x:Key="LabelSemiBold"
+        BasedOn="{StaticResource LabelBase}"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="CircularBlack" />
+    </Style>
+
+    <Style
+        x:Key="LabelLight"
+        BasedOn="{StaticResource LabelBase}"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="CircularRegular" />
+    </Style>
+
+    <Style
+        x:Key="LabelMedium"
+        BasedOn="{StaticResource LabelBase}"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="CircularMedium" />
+    </Style>
+
+
+    <Style
+        x:Key="LabelBold"
+        BasedOn="{StaticResource LabelBase}"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="CircularBold" />
+    </Style>
+
+
+
+</ResourceDictionary>

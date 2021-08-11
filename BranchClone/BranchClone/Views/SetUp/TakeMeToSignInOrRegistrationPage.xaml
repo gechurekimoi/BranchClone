@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BranchClone.Views.SetUp.TakeMeToSignInOrRegistrationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{StaticResource Primary}"
+    Style="{StaticResource ContentPageWithoutNavBar}">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                <Image
+                    AbsoluteLayout.LayoutBounds="0.5,0.2"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Aspect="AspectFit"
+                    HeightRequest="150"
+                    Source="branchlogo.jpg" />
+
+                <StackLayout
+                    AbsoluteLayout.LayoutBounds="0.5,0.5"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    HorizontalOptions="CenterAndExpand">
+                    <Label
+                        FontSize="27"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelBold}"
+                        Text="Your finances at your finger tips"
+                        TextColor="{StaticResource White-Light}"
+                        WidthRequest="200" />
+
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelRegular}"
+                        Text="Learn how branch makes it easy to manage your money"
+                        TextColor="{StaticResource White-Light}"
+                        WidthRequest="270" />
+
+                </StackLayout>
+
+                <StackLayout
+                    Padding="15"
+                    AbsoluteLayout.LayoutBounds="0.5,0.85,1,0.1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional"
+                    HorizontalOptions="FillAndExpand">
+
+                    <Button Style="{StaticResource SecondaryButton}" Text="Learn More" />
+
+                </StackLayout>
+
+
+
+                <Grid
+                    AbsoluteLayout.LayoutBounds="0.5,1,0.9,0.1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional,HeightProportional"
+                    ColumnDefinitions="*,Auto">
+
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Grid.GestureRecognizers>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        FontSize="18"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelSemiBold}"
+                        Text="Take Me to SignIn / Register"
+                        TextColor="{StaticResource White-Light}"
+                        VerticalOptions="CenterAndExpand" />
+
+                    <Image
+                        Grid.Column="1"
+                        Margin="-60,5,0,0"
+                        Aspect="AspectFit"
+                        HeightRequest="20"
+                        HorizontalOptions="StartAndExpand"
+                        Source="rightarrow"
+                        VerticalOptions="CenterAndExpand" />
+
+                </Grid>
+
+
+
+            </AbsoluteLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

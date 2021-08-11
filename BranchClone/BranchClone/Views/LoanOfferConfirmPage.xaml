@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BranchClone.Views.LoanOfferConfirmPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{StaticResource ContentPageBackground}"
+    Style="{StaticResource ContentPageWithoutNavBar}">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout
+                Padding="20"
+                HorizontalOptions="FillAndExpand"
+                Orientation="Horizontal"
+                VerticalOptions="Start">
+
+                <Image
+                    HeightRequest="20"
+                    HorizontalOptions="Start"
+                    Source="backarrow"
+                    VerticalOptions="CenterAndExpand" />
+
+                <Label
+                    Margin="30,0"
+                    FontSize="20"
+                    HorizontalOptions="StartAndExpand"
+                    Style="{StaticResource LabelMedium}"
+                    Text="Loan Offers"
+                    TextColor="{StaticResource LabelDarkColor}" />
+            </StackLayout>
+
+            <StackLayout Padding="20,0,20,0" VerticalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="Start">
+
+                    <Frame CornerRadius="10">
+
+                        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+
+                            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+
+                                <Label
+                                    FontSize="12"
+                                    Style="{StaticResource LabelRegular}"
+                                    Text="PRINCIPAL" />
+
+                                <Label
+                                    FontSize="28"
+                                    Style="{StaticResource LabelBold}"
+                                    Text="Ksh 10,000"
+                                    TextColor="{StaticResource LabelDarkColor}" />
+                            </StackLayout>
+
+                            <Image
+                                HeightRequest="20"
+                                HorizontalOptions="End"
+                                Source="editSecondary"
+                                VerticalOptions="CenterAndExpand" />
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <Frame
+                    Margin="0,20"
+                    Padding="0"
+                    BackgroundColor="{StaticResource White-Light}"
+                    CornerRadius="10"
+                    VerticalOptions="Start">
+
+                    <Grid
+                        Margin="0"
+                        Padding="0"
+                        ColumnDefinitions="0.9*,0.1*">
+
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowLanguagePopupPageCommand}" />
+                        </Grid.GestureRecognizers>
+
+                        <StackLayout Grid.Column="0" Padding="10">
+                            <Label
+                                Style="{StaticResource LabelBold}"
+                                Text="Select Loan Terms"
+                                TextColor="{StaticResource Secondary}" />
+
+                            <Label
+                                FontSize="16"
+                                Style="{StaticResource LabelMedium}"
+                                Text="28 days"
+                                TextColor="{StaticResource Primary}" />
+
+                            <Label
+                                FontSize="14"
+                                Style="{StaticResource LabelRegular}"
+                                Text="One month payment of KSH 12,500" />
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" BackgroundColor="{StaticResource SecondaryLight}">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="15"
+                                HorizontalOptions="CenterAndExpand"
+                                Source="downarrow"
+                                VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+
+                    </Grid>
+
+                </Frame>
+
+                <StackLayout Spacing="10" VerticalOptions="StartAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Label
+                            HorizontalOptions="StartAndExpand"
+                            Style="{StaticResource LabelMedium}"
+                            Text="Interest"
+                            TextColor="{StaticResource LabelDarkColor}" />
+                        <Label
+                            HorizontalOptions="EndAndExpand"
+                            Style="{StaticResource LabelRegular}"
+                            Text="Ksh 2,500"
+                            TextColor="{StaticResource LabelDarkColor}" />
+                    </StackLayout>
+                    <BoxView
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.05"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Start" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label
+                            HorizontalOptions="StartAndExpand"
+                            Style="{StaticResource LabelBold}"
+                            Text="Total Due"
+                            TextColor="{StaticResource LabelDarkColor}" />
+                        <Label
+                            HorizontalOptions="EndAndExpand"
+                            Style="{StaticResource LabelBold}"
+                            Text="Ksh 12,500"
+                            TextColor="{StaticResource LabelDarkColor}" />
+                    </StackLayout>
+                </StackLayout>
+
+                <Button
+                    Style="{StaticResource SecondaryButton}"
+                    Text="Continue"
+                    VerticalOptions="End"
+                    Clicked="Button_Clicked"/>
+
+
+                <Grid
+                    Margin="0,0,0,20"
+                    ColumnDefinitions="*,Auto"
+                    HorizontalOptions="FillAndExpand">
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        FontSize="18"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource LabelMedium}"
+                        Text="View Loan Details"
+                        TextColor="{StaticResource LabelDarkColor}"
+                        VerticalOptions="CenterAndExpand" />
+
+                    <Image
+                        Grid.Column="1"
+                        Margin="-60,5,0,0"
+                        Aspect="AspectFit"
+                        HeightRequest="20"
+                        HorizontalOptions="StartAndExpand"
+                        Source="nextSecondary"
+                        VerticalOptions="CenterAndExpand" />
+
+                </Grid>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

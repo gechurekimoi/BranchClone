@@ -1,0 +1,108 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\Biotif\Biotif-Black.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-BlackItalic.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-Bold.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-BoldItalic.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-Book.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-BookItalic.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-ExtraBold.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-ExtraBoldItalic.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-Light.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-LightItalic.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-Medium.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-MediumItalic.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-Regular.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-RegularItalic.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-SemiBold.ttf" />
+    <None Remove="Resources\Fonts\Biotif\Biotif-SemiBoldItalic.ttf" />
+    <None Remove="Resources\Fonts\Circular\Circular Std Black.ttf" />
+    <None Remove="Resources\Fonts\Circular\Circular Std Bold.ttf" />
+    <None Remove="Resources\Fonts\Circular\Circular Std Book.ttf" />
+    <None Remove="Resources\Fonts\Circular\Circular Std Medium.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-Black.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-BlackItalic.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-Bold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-BoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-Book.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-BookItalic.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-ExtraBold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-ExtraBoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-Light.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-LightItalic.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-Medium.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-MediumItalic.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-Regular.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-RegularItalic.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-SemiBold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Biotif\Biotif-SemiBoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Circular\Circular Std Black.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Circular\Circular Std Bold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Circular\Circular Std Book.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Circular\Circular Std Medium.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.12" />
+    <PackageReference Include="Syncfusion.Licensing" Version="18.4.0.39" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.4.0.39" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.4.0.39" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Styles\ButtonStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\ColorStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\ContentPageStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\LabelStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ConfirmDepositAccountPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DashboardPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LoanOfferConfirmPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PopUps\SelectCountryOptionsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PopUps\SelectLanguageOptionsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SetUp\ChooseLanguagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SetUp\EnterPhoneNumberPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SetUp\SelectCountryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SetUp\TakeMeToSignInOrRegistrationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SetUp\VerifyPhoneNumberPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

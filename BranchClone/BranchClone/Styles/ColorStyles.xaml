@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="BranchClone.Styles.ColorStyles"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="Primary">#19355D</Color>
+    <Color x:Key="PrimaryDark">#0E2342</Color>
+    <Color x:Key="Secondary">#4FCDFF</Color>
+    <Color x:Key="SecondaryLight">#A9E5FD</Color>
+    <Color x:Key="SecondaryLight2">#F7FCFF</Color>
+    <Color x:Key="White-Light">#FEFEFE</Color>
+    <Color x:Key="ContentPageBackground">#FEFEFE</Color>
+    <Color x:Key="LabelDefaultColor">Gray</Color>
+    <Color x:Key="LabelDarkColor">#272727</Color>
+
+
+</ResourceDictionary>

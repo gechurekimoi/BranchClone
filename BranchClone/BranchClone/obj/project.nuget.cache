@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fywj0Q8a9ssD555Iztll/8XVCFXgzcODTC+gSIqmcInlA9DCHy+h25BlKN+vc4IHGVNUneum9I6Xh9axx5HnwA==",
+  "success": true,
+  "projectFilePath": "D:\\BranchClone\\BranchClone\\BranchClone\\BranchClone.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gechu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\rg.plugins.popup\\2.0.0.12\\rg.plugins.popup.2.0.0.12.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\syncfusion.licensing\\18.4.0.39\\syncfusion.licensing.18.4.0.39.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.39\\syncfusion.xamarin.core.18.4.0.39.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\18.4.0.39\\syncfusion.xamarin.sfcombobox.18.4.0.39.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\xamarin.communitytoolkit\\1.2.0\\xamarin.communitytoolkit.1.2.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\gechu\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.CommunityToolkit 1.2.0 requires Xamarin.Forms (>= 5.0.0.1874 && <= 5.0.0.2012) but version Xamarin.Forms 5.0.0.2083 was resolved.",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}
