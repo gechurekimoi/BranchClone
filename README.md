@@ -6,3 +6,9 @@ Below is a sample run-through of how the clone looks like.
 
 https://user-images.githubusercontent.com/13120515/129023589-526ef5dd-da81-4600-a9b6-a9957c65c061.mp4
 
+### Technologies Used 
+- Xamarin Forms 5 (.NET)
+- Rg.Plugins.PopUps ( https://github.com/rotorgames/Rg.Plugins.Popup )
+- SyncFusion (https://help.syncfusion.com/xamarin/introduction/overview)
+- Xamarin Community ToolKit (https://github.com/xamarin/XamarinCommunityToolkit)
+
